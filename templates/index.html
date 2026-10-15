@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Allison</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero__text">
+      <h1>Allison</h1>
+      <p class="hero__lead">Artes, humanidades y la calma de las cosas sencillas.</p>
+    </div>
+    <figure class="hero__photo">
+      <img src="{{ url_for('static', filename='img/yo.jpeg') }}" alt="Allison frente a un acuario, rodeada de peces plateados">
+    </figure>
+  </header>
+
+  <main>
+
+    <section class="block">
+      <p class="block__text">
+        Soy Allison y me gustan mucho las artes y las humanidades. En mis tiempos libres disfruto dormir, ver series y películas, escuchar música y, sobre todo, admirar los paisajes y disfrutar de la naturaleza. Me gusta encontrar tranquilidad en las cosas sencillas y apreciar los pequeños momentos de la vida.
+      </p>
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--tall">
+          <img src="{{ url_for('static', filename='img/yo.jpeg') }}" alt="Allison en el acuario" loading="lazy">
+        </figure>
+        <figure class="gallery__item gallery__item--tall">
+          <img src="{{ url_for('static', filename='img/yootravez.jpeg') }}" alt="Allison caminando de espaldas por una calle del centro" loading="lazy">
+        </figure>
+        <figure class="gallery__item gallery__item--wide">
+          <img src="{{ url_for('static', filename='img/paisaje.jpeg') }}" alt="Vista de un pueblo con montañas al fondo" loading="lazy">
+        </figure>
+        <figure class="gallery__item gallery__item--wide">
+          <img src="{{ url_for('static', filename='img/arcoiris.jpeg') }}" alt="Arcoíris sobre un cielo nublado y un cerro iluminado" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="block block--split">
+      <figure class="photo photo--arch">
+        <img src="{{ url_for('static', filename='img/yoyabril.jpeg') }}" alt="Allison y su hermana en un museo, bajo un esqueleto fósil" loading="lazy">
+      </figure>
+      <p class="block__text">
+        También tengo una hermana menor a la que quiero muchísimo. Es alguien muy especial para mí y me alegra tenerla en mi vida. ❤️
+      </p>
+    </section>
+
+    <section class="block">
+      <p class="block__text">
+        En mi familia también tenemos dos mascotas que son muy especiales para nosotros. Uno es Togo, nuestro perrito, y el otro es un gatito que, aunque no tiene un nombre como tal, yo simplemente le digo “Gato”. 🐶🐱 Los dos son un amor y tienen personalidades muy diferentes, lo que los hace únicos y todavía más especiales.
+      </p>
+      <div class="pets">
+        <figure class="photo">
+          <img src="{{ url_for('static', filename='img/togo.jpeg') }}" alt="Togo, un perrito blanco y esponjoso con collar" loading="lazy">
+          <figcaption>Togo</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="{{ url_for('static', filename='img/gato.jpeg') }}" alt="Gato durmiendo tranquilo" loading="lazy">
+          <figcaption>Gato</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p>
+        En general, disfruto de las pequeñas cosas que me hacen feliz, de pasar tiempo con las personas que quiero y de encontrar belleza en los detalles más sencillos de la vida. 🌿✨
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">Ali</footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" aria-label="Cerrar imagen">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
